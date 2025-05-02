@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Основні блоки */
+  header {
+    height: 110px;
+    background: #6ca0dc;
+  }
+  
+  footer {
+    height: 65px;
+    background: #dacfcf;
+    margin-top: auto;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+  }
+  
+  nav {
+    width: 130px;
+    background: #f2b632;
+  }
+  
+  main {
+    flex: 1;
+    background: #e0e0e0;
+  }
+  
+  aside {
+    display: none;
+  }
+  
+  /* Адаптивність для мобільного пристрою */
+  @media (max-width: 850px) {
+    header {
+      height: 60px;
+    }
+  
+    footer {
+      height: 30px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    main {
+      width: 100%;
+      flex: 1;
+    }
+  
+    aside {
+      display: block;
+      width: 90px;
+      height: auto;
+      background: #2b1741;
+    }
+  }
+  
